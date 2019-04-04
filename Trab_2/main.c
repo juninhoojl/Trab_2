@@ -15,7 +15,6 @@
 //Recalcular a distancia minima que precisa ser atingida
 
 
-
 //Retorna distancia maxima
 float distancia(float v0, float v, float a);
 

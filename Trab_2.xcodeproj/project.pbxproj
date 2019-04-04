@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A91AEFC9224D011500885D04 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A91AEFC8224D011500885D04 /* main.c */; };
+		A9A0FEE3225642160099A81A /* lancamento.c in Sources */ = {isa = PBXBuildFile; fileRef = A9A0FEE2225642160099A81A /* lancamento.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		A91AEFC5224D011500885D04 /* Trab_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Trab_2; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91AEFC8224D011500885D04 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		A9A0FEE1225642160099A81A /* lancamento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lancamento.h; sourceTree = "<group>"; };
+		A9A0FEE2225642160099A81A /* lancamento.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lancamento.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				A91AEFC8224D011500885D04 /* main.c */,
+				A9A0FEE1225642160099A81A /* lancamento.h */,
+				A9A0FEE2225642160099A81A /* lancamento.c */,
 			);
 			path = Trab_2;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91AEFC9224D011500885D04 /* main.c in Sources */,
+				A9A0FEE3225642160099A81A /* lancamento.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

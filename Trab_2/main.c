@@ -9,20 +9,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include "lancamento.h"
 
-
-//Para considerar o angulo -45 e + 45
-//Recalcular a distancia minima que precisa ser atingida
-
-
-//Retorna distancia maxima
-float distancia(float v0, float v, float a);
-
-//Retorna
-float vx(float v, float o);
-float vy(float v, float o);
-float dmax(float v0, float o);
-float dalvo(float o);
 
 int main(int argc, const char * argv[]) {
     
@@ -34,32 +22,10 @@ int main(int argc, const char * argv[]) {
 }
 
 
-float dalvo(float o){
-    
-    
-    
-    
-    return 0.0;
-}
 
 
 
 
 
 
-float distancia(float v0, float v, float a){
-    float dist = (pow(v0, 2) - pow(v, 2))/(2*a);
-    return dist;
-}
 
-float dmax(float v0, float o){
-    return (pow(v0, 2)*(sin(2*((o/180)*M_PI))))/9.8;
-}
-
-float vy(float v, float o){
-    return v*sin(((o/180)*M_PI));
-}
-
-float vx(float v, float o){
-    return v*cos(((o/180)*M_PI));
-}

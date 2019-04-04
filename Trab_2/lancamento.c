@@ -8,7 +8,6 @@
 
 #include "lancamento.h"
 
-
 float distancia(float v0, float v, float a){
     float dist = (pow(v0, 2) - pow(v, 2))/(2*a);
     return dist;

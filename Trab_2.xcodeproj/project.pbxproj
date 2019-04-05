@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A91AEFC9224D011500885D04 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A91AEFC8224D011500885D04 /* main.c */; };
-		A9A0FEE3225642160099A81A /* lancamento.c in Sources */ = {isa = PBXBuildFile; fileRef = A9A0FEE2225642160099A81A /* lancamento.c */; };
+		A9F59C1C22579745008286E5 /* calculo.c in Sources */ = {isa = PBXBuildFile; fileRef = A9F59C1B22579745008286E5 /* calculo.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		A91AEFC5224D011500885D04 /* Trab_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Trab_2; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91AEFC8224D011500885D04 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		A9A0FEE1225642160099A81A /* lancamento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lancamento.h; sourceTree = "<group>"; };
-		A9A0FEE2225642160099A81A /* lancamento.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lancamento.c; sourceTree = "<group>"; };
+		A9F59C1A22579745008286E5 /* calculo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = calculo.h; sourceTree = "<group>"; };
+		A9F59C1B22579745008286E5 /* calculo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = calculo.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				A91AEFC8224D011500885D04 /* main.c */,
-				A9A0FEE1225642160099A81A /* lancamento.h */,
-				A9A0FEE2225642160099A81A /* lancamento.c */,
+				A9F59C1A22579745008286E5 /* calculo.h */,
+				A9F59C1B22579745008286E5 /* calculo.c */,
 			);
 			path = Trab_2;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91AEFC9224D011500885D04 /* main.c in Sources */,
-				A9A0FEE3225642160099A81A /* lancamento.c in Sources */,
+				A9F59C1C22579745008286E5 /* calculo.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,13 +20,13 @@ int main(int argc, const char * argv[]) {
     int N, i, ptsAtc = 0, ptsDef = 0, x = 160, y = 160;
     
     
-        printf("Digite a distancia da catapulta ate o castelo: ");
+        printf("Informe a distancia da catapulta ate o castelo: ");
         scanf(" %f",&dist);
         
         
         while((abs(x) > 150) || (abs(y) > 150)){ //verifica se o modulo dos valores digitados pra x e y estao no limite
             fflush(stdin);
-            printf("Digite o ponto X e Y da coordenada do alvo (-150 < x & y < 150): ");
+            printf("Informe as cordenadas X e Y do alvo (-150 < x & y < 150): ");
             scanf("%d %d",&x,&y);
             
             if(abs(x) < 150 && abs(y) < 150){
@@ -34,16 +34,16 @@ int main(int argc, const char * argv[]) {
             }
         }
         
-        printf("As coordenadas (x,y) digitadas para o alvo foram: %d %d\n",x,y);
+        printf("As coordenadas sao (%d,%d).\n",x,y);
         
         fflush(stdin);
-        printf("Digite a quantidade de lancamentos: ");
+        printf("Informe a quantidade de lancamentos: ");
         scanf(" %d",&N);
         
         for(i=0;i<N;i++){
-            printf("Digite o angulo de inclinacao do arremesso %d: ",i+1);
+            printf("Informe o angulo de inclinacao do arremesso %d: ",i+1);
             scanf("%f",&ang);
-            printf("Digite a velocidade inicial %d: ",i+1);
+            printf("Informe a velocidade inicial do arremesso %d: ",i+1);
             scanf("%f",&vel);
             
             
@@ -53,6 +53,7 @@ int main(int argc, const char * argv[]) {
             alcV = calculaAltMax(vel,ang,g);
             
             difAcerto =  verificaAcerto(alcH,alcV,x,y);
+            printf("Distância entre alvo e acerto: %f \n",difAcerto);
 
             calculaPontos(difAcerto,&ptsAtc,&ptsDef);
         }
@@ -61,23 +62,6 @@ int main(int argc, const char * argv[]) {
         printf("Atacante:\t%d\n",ptsAtc);
         printf("Defensor:\t%d\n\n\n",ptsDef);
 
-
-    
-    printf("\n  █████╗ ██╗    ██╗   ██╗ ██████╗     ███████╗██████╗ ██████╗  █████╗ ██████╗  ██████╗\n");
-    printf("    ██╔══██╗██║    ██║   ██║██╔═══██╗    ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔═══██╗\n");
-    printf("    ███████║██║    ██║   ██║██║   ██║    █████╗  ██████╔╝██████╔╝███████║██║  ██║██║   ██║\n");
-    printf("    ██╔══██║██║    ╚██╗ ██╔╝██║   ██║    ██╔══╝  ██╔══██╗██╔══██╗██╔══██║██║  ██║██║   ██║\n");
-    printf("    ██║  ██║███████╗╚████╔╝ ╚██████╔╝    ███████╗██║  ██║██║  ██║██║  ██║██████╔╝╚██████╔╝\n");
-    printf("    ╚═╝  ╚═╝╚══════╝ ╚═══╝   ╚═════╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝\n\n");
-
-    printf("\n     █████╗ ██╗    ██╗   ██╗ ██████╗      █████╗ ████████╗██╗███╗   ██╗ ██████╗ ██╗██████╗  ██████╗\n");
-    printf("    ██╔══██╗██║    ██║   ██║██╔═══██╗    ██╔══██╗╚══██╔══╝██║████╗  ██║██╔════╝ ██║██╔══██╗██╔═══██╗\n");
-    printf("    ███████║██║    ██║   ██║██║   ██║    ███████║   ██║   ██║██╔██╗ ██║██║  ███╗██║██║  ██║██║   ██║\n");
-    printf("    ██╔══██║██║    ╚██╗ ██╔╝██║   ██║    ██╔══██║   ██║   ██║██║╚██╗██║██║   ██║██║██║  ██║██║   ██║\n");
-    printf("    ██║  ██║███████╗╚████╔╝ ╚██████╔╝    ██║  ██║   ██║   ██║██║ ╚████║╚██████╔╝██║██████╔╝╚██████╔╝\n");
-    printf("    ╚═╝  ╚═╝╚══════╝ ╚═══╝   ╚═════╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═════╝  ╚═════╝\n\n");
-
-    
     return 0;
 }
 

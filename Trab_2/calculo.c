@@ -13,8 +13,11 @@ float calculaAltMax(float vel, float ang, float g){
     return ((vel * vel) * (sin(ang) * sin(ang)))/(2*g);
 }
 
+/*float calculaAltMax(float vel, float ang, float g){
+    return (pow(vel,2) * (pow(sin(ang),2)/(2*g)) );*/
+
 float calculaDistMax(float vel, float ang, float g){
-    return ((vel * vel) * (cos(ang) * sin(ang))/g);
+    return ((vel * vel) * (cos(ang) * cos(ang))/g);
 }
 
 float verificaAcerto(float cordH, float cordV,int x, int y){

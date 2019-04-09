@@ -11,4 +11,11 @@
 
 #include <stdio.h>
 
+float calculaAltMax(float vel, float ang, float g);
+
+float calculaDistMax(float vel, float ang, float g);
+
+float verificaAcerto(float cordX, float cordY,int x, int y);
+
+void calculaPontos(float difDist, int *ptsAtc,int *ptsDef);
 #endif /* calculo_h */
